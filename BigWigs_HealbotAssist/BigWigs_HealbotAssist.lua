@@ -111,6 +111,87 @@ L:RegisterTranslations("enUS", function() return {
 	["Your turn to heal!"] = true,
 } end )
 
+L:RegisterTranslations("ruRU", function() return {
+	cmd = "HealbotAssist",
+
+	bar_cmd = "bar",
+	bar_name = "Испорченный разум",
+	bar_desc = "Показывает полосу когда на вас дебаф Испорченный разум.",
+
+	healnotify_cmd = "notify",
+	healnotify_name = "Уведомление о лечении",
+	healnotify_desc = "Отправляет предупреждение в рейд о том, кто исцеляет сейчас, и кто будет следующим.",
+	
+	localhealnotify_cmd = "localnotify",
+	localhealnotify_name = "Сообщать о вашей очереди исцелять",
+	localhealnotify_desc = "Показывает локальное сообщение, которое предупредит вас, когда предположительно вам исцелять.",
+
+	notwhisper_cmd = "notwhisper",
+	notwhisper_name = "Не сообщать о ротации исцеления",
+	notwhisper_desc = "Вкл/Выкл сообщение шепотом, которое предупреждает следующего и следующего после него о приготовлении к исцелению.",
+
+	spore_cmd = "spore",
+	spore_name = "Ротация Спор",
+	spore_desc = "Сообщать шепотом о ротации спор участникам рейда.",
+	
+	sporeicon_cmd = "sporeicon",
+	sporeicon_name = "Ротация Спор - Метка",
+	sporeicon_desc = "Ставит метку рейда на группу для захвата споры.",
+
+	bar_text = "Испорченный разум",
+
+	slash_cmd = "/bwhba",
+	slash_desc = "Big Wigs опции для Healbot Assist.",
+
+	tabletshow_cmd = "show",
+	tabletshow_desc = "Показывает список целителей.",
+	tablethide_cmd = "hide",
+	tablethide_desc = "Скрывает список целителей.",
+	setchannel_cmd = "channel",
+	setchannel_desc = "Устанавливает канал для спама сообщений целителям.",
+
+	["Big Wigs Healbot Assist"] = "Big Wigs Healbot Assist",
+	["Healer"] = "Целитель",
+	["Timer"] = "Таймер",
+	["You have received a healer list for Loatheb from %s, accept this list?"] = "Вы получили список целителей для Лотхиба от %s, принять данный лист?",
+	["Yes"] = "Да",
+	["No"] = "Нет",
+	["Ready"] = "Готов",
+	["Next"] = "След.",
+	["Corrupted Mind"] = "Испорченный разум",
+	["The leader will automatically whisper the next one in line when to heal."] = "Лидер автоматически шепчет следующему в очереди, когда исцелять.",
+	["Get ready!"] = "Приготовьтесь!",
+	["Heal now!"] = "Лечите сейчас!",
+	["[BWHBA] You are the first healer, heal when ready."] = "[BWHBA] Вы первый целитель, лечите когда будете готовы.",
+	["[BWHBA] You are the second healer, heal when you get the message."] = "[BWHBA] Вы второй целитель, начинайте лечить, когда получите личное сообщение.",
+	["%s healed - %s is next!"] = "%s лечит - %s следующий!",
+	["<channelname>"] = "<channelname>",
+	["You are NOT in a healer channel. Please set one using /bwhba setchannel <channelname>."] = "Вы не в канале целителей. Пожалуйста, установите его, используя /bwhba setchannel <channelname>.",
+	["Everyone has debuff!"] = "На всех дебаф!",
+	["Your announce channel is set to %s."] = "Ваш канал объявлений установлен в %s.",
+	["Healing rotation is set to: %s - you will get whispers when to heal."] = "Ротация исцеления устанавливается: %s - вы получите личное сообщение когда нужно лечить.",
+	["The channel %s was not found, please set a healer channel with /bwhba setchannel <channelname>."] = "Канал %s не был найден, пожалуйста, установите канал целителей /bwhba setchannel <channelname>.",
+	["Offline"] = "Не в сети",
+	["Dead"] = "Мертв",
+	["Healer list not populated yet, please click here to do so now."] = "Список целителей еще не готов, пожалуйста, нажмите здесь, чтобы сделать это.",
+	["Commands"] = "Команды",
+	["Print rotation to raidchat"] = "Вывести ротацию в рейд-чат",
+	["Re-scan healers"] = "Пере-сканировать целителей",
+	["Ignore target"] = "Игнорировать цель",
+	["Healer list refreshed."] = "Обновляется список целителей.",
+	["%s will be blocked from healing rotation."] = "%s будет заблокировано от ротации целителей.",
+	["%s can be in healing rotation."] = "%s может быть в ротации целителей.",
+	["[BWHBA] Healing rotation: %s."] = "[BWHBA] Ротация целителей %s.",
+	["%[BWHBA%] Healing rotation: (.*)."] = "%[BWHBA%] Ротация целителей: (.*).",
+	["Healing rotation broadcasted by %s."] = "Ротация целителей транслируется от %s.",
+	["Healing rotation not broadcasted yet."] = "Ротация целителей не транслируется.",
+	["Group %d is next for spore!"] = "Группа %d след. на споры!",
+	["Kill spore!"] = "Убейте спору!",
+	["Get ready for spore!"] = "Приготовьтесь к споре!",
+	["Get ready to heal!"] = "Приготовьтесь к лечению!",
+	["Your turn to heal!"] = "Ваша очередь исцелять!",
+} end )
+
 L:RegisterTranslations("koKR", function() return {
 	bar_name = "부패한 정신 바",
 	bar_desc = "부패한 정신 디버프에 대한 바를 표시합니다.",

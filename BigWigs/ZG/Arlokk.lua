@@ -32,6 +32,27 @@ L:RegisterTranslations("enUS", function() return {
 	mark_warning_other = "%s is marked!",
 } end )
 
+L:RegisterTranslations("ruRU", function() return {
+	cmd = "Arlokk",
+
+	youmark_cmd = "youmark",
+	youmark_name = "Метка Арлокк на вас",
+	youmark_desc = "Предупреждает когда метка на вас.",
+
+	othermark_cmd = "othermark",
+	othermark_name = "Метка Арлокк на другом",
+	othermark_desc = "Предупреждает когда метка на ком-то другом",
+
+	icon_cmd = "icon",
+	icon_name = "Рейдовая иконка",
+	icon_desc = "Помечать рейдовой иконкой игрока, на котором метка Арлокк (необходимо быть лидером рейда или его помощником.).",
+
+	mark_trigger = "Полакомьтесь ([^%n]+), мои прелести!$",
+
+	mark_warning_self = "На вас метка!",
+	mark_warning_other = "На %s метка!",
+} end )
+
 L:RegisterTranslations("frFR", function() return {
 	youmark_name = "Alerte quand vous \195\170tes marqu\195\169",
 	youmark_desc = "Pr\195\169viens quand vous \195\170tes marqu\195\169.",

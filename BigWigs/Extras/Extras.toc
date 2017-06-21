@@ -2,6 +2,8 @@
 
 ## Title: Big Wigs [|cffeda55fExtras|r]
 ## Notes: Big Wigs Extra Plugins
+## Title-ruRU: Big Wigs [|cffeda55fДополнение|r]
+## Notes-ruRU: Дополнительные плагины Big Wigsа
 ## Title-zhTW: Big Wigs [|cffeda55f額外|r]
 ## Notes-zhTW: Big Wigs 額外的模組
 ## Author: Ammo, Rabbit

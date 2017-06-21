@@ -38,6 +38,33 @@ L:RegisterTranslations("enUS", function() return {
 	frenzy_desc = "Warn when for frenzy",
 } end)
 
+L:RegisterTranslations("ruRU", function() return {
+	wingbuffet_trigger = "Пламегор начинает использовать \"Взмах крылом\".",
+	shadowflame_trigger = "Пламегор начинает использовать \"Теневое пламя\".",
+	frenzy_trigger = "%s впадает в бешенство!",
+
+	wingbuffet_message = "Взмах крылом! 30 секунд до след.!",
+	wingbuffet_warning = "3 секунды до взмаха крылом!",
+	shadowflame_warning = "ТЕНЕВОЕ ПЛАМЯ!",
+	frenzy_message = "БЕШЕНСТВО!",
+
+	wingbuffet_bar = "Взмах крылом",
+
+	cmd = "Flamegor",
+
+	wingbuffet_cmd = "wingbuffet",
+	wingbuffet_name = "Взмах крылом",
+	wingbuffet_desc = "Предупреждает о Взмахе крылом.",
+
+	shadowflame_cmd = "shadowflame",
+	shadowflame_name = "Теневое пламя",
+	shadowflame_desc = "Предупреждает о Теневом пламени.",
+
+	frenzy_cmd = "frenzy",
+	frenzy_name = "Бешенство",
+	frenzy_desc = "Предупреждает о Бешенстве",
+} end)
+
 L:RegisterTranslations("zhCN", function() return {
 	wingbuffet_trigger = "弗莱格尔开始施放龙翼打击。",
 	shadowflame_trigger = "弗莱格尔开始施放暗影烈焰。",

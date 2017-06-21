@@ -32,6 +32,27 @@ L:RegisterTranslations("enUS", function() return {
 	shadowflame_desc = "Warn for Shadow Flame",
 } end)
 
+L:RegisterTranslations("ruRU", function() return {
+	wingbuffet_trigger = "Огнечрев начинает использовать \"Взмах крылом\".",
+	shadowflame_trigger = "Огнечрев начинает использовать \"Теневое пламя\".",
+
+	wingbuffet_message = "Взмах крылом! 30 сек. до след.!",
+	wingbuffet_warning = "3 сек. до Взмах крылом!",
+	shadowflame_warning = "Взмах крылом!",
+
+	wingbuffet_bar = "Взмах крылом",
+
+	cmd = "Firemaw",
+
+	wingbuffet_cmd = "wingbuffet",
+	wingbuffet_name = "Взмах крылом",
+	wingbuffet_desc = "Предупреждает о Взмахе крылом",
+
+	shadowflame_cmd = "shadowflame",
+	shadowflame_name = "Теневое пламя",
+	shadowflame_desc = "Предупреждает о Теневом пламени",
+} end)
+
 L:RegisterTranslations("zhCN", function() return {
 	wingbuffet_trigger = "费尔默开始施放龙翼打击。",
 	shadowflame_trigger = "费尔默开始施放暗影烈焰。",

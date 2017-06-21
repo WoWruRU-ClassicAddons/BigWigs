@@ -1,6 +1,7 @@
-## Interface: 11200
+﻿## Interface: 11200
 ## Title: Big Wigs |cffff0000+|r|cffffffffCommon Auras|r
 ## Notes: Notifies the raid about common buffs and debuffs.
+## Notes-ruRU: Предупреждает рейд об основных положительных и отрицательных эффектах.
 ## Author: Rabbit
 ## X-Website: http://www.wowace.com
 ## X-eMail: rabbit.magtheridon@gmail.com
@@ -12,14 +13,6 @@
 ## OptionalDeps: Ace2, SpellStatusLib, SpellCacheLib, GratuityLib, Deformat, Babble-2.2
 ## X-Embeds: Deformat, GratuityLib, SpellCacheLib, SpellStatusLib, Babble-2.2
 ## SavedVariables: BigWigsCommonAurasDB
-
 ## X-BigWigs-LoadWithCore: 1
 
-libs\Babble-Spell-2.2\Babble-Spell-2.2.lua
-libs\Deformat-2.0\Deformat-2.0.lua
-libs\Gratuity-2.0\Gratuity-2.0.lua
-libs\SpellCache-1.0\SpellCache-1.0.lua
-libs\SpellStatus-1.0\SpellStatus-1.0.lua 
-
 CommonAuras.lua
-

@@ -39,6 +39,34 @@ L:RegisterTranslations("enUS", function() return {
 	icon_desc = "Put a Raid Icon on the person who's the bomb. (Requires promoted or higher)",
 } end)
 
+L:RegisterTranslations("ruRU", function() return {
+	cmd = "Vaelastrasz",
+
+	trigger1 = "([^%s]+) ([^%s]+) (.*)Горящий адреналин%.$",
+
+	you = "Вы",
+	are = "находитесь",
+
+	warn1 = "На вас Горящий адреналин!",
+	warn2 = " - \"Горящий адреналин\"",
+
+	youburning_cmd = "youburning",
+	youburning_name = "Горящий адреналин на вас",
+	youburning_desc = "Предупреждает когда на вас Горящий адреналин.",
+
+	elseburning_cmd = "elseburning",
+	elseburning_name = "Горящий адреналин на ком-то другом",
+	elseburning_desc = "Предупреждает когда на ком-то Горящий адреналин.",
+
+	burningbar_cmd = "burningbar",
+	burningbar_name = "Полоса Горящего адреналина",
+	burningbar_desc = "Показывает временную полосу для Горящего адреналина.",
+
+	icon_cmd = "icon",
+	icon_name = "Рейдовая иконка на бомбе",
+	icon_desc = "Помечать рейдовой иконкой игрока, являющегося бомбой (необходимо быть лидером рейда или его помощником.).",
+} end)
+
 L:RegisterTranslations("zhCN", function() return {
 	trigger1 = "^(.+)受(.+)了燃烧刺激",
 

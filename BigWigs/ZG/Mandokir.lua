@@ -32,6 +32,29 @@ L:RegisterTranslations("enUS", function() return {
 	enraged_message = "Ohgan down! Mandokir enraged!",	
 } end )
 
+L:RegisterTranslations("ruRU", function() return {
+	cmd = "Mandokir",
+
+	you_cmd = "you",
+	you_name = "Угрожающий взгляд на вас",
+	you_desc = "Предупреждает когда на вас Угрожающий взгляд",
+
+	other_cmd = "other",
+	other_name = "Угрожающий взгляд на другом",
+	other_desc = "Предупреждающий когда Угрожающий взгляд на другом",
+
+	icon_cmd = "icon",
+	icon_name = "Рейдовая иконка",
+	icon_desc = "Помечать рейдовой иконкой игрока, на котором Угрожающий взгляд (необходимо быть лидером рейда или его помощником.).",
+
+	watch_trigger = "([^%s]+)! я слежу за тобой!",
+	enrage_trigger = "увидев гибель своего ящера, впадает в бешенство!",
+
+	watched_warning_self = "На вас Угрожающий взгляд!",
+	watched_warning_other = "На %s Угрожающий взгляд!",
+	enraged_message = "Оган повержен! Мандокир в бешенстве!",	
+} end )
+
 L:RegisterTranslations("frFR", function() return {
 	you_name = "Alerte quand vous \195\170tes surveill\195\169",
 	you_desc = "Pr\195\169viens lorsque vous \195\170tes surveill\195\169.",

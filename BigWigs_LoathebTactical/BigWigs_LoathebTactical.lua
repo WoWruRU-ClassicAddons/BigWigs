@@ -68,6 +68,55 @@ L:RegisterTranslations("enUS", function() return {
 
 } end )
 
+L:RegisterTranslations("ruRU", function() return {
+	cmd = "BigWigsLoathebTactical",
+	
+	spore_cmd = "spore",
+	spore_name = "Не предупреждать группу о споре (А)",
+	spore_desc = "Когда проверка не предупреждает группу о заполучении споры, за 4 сек. до её появления. Требуется помощь (А)",
+	
+	revsporeseq_cmd = "revsporeseq",
+	revsporeseq_name = "Изменять группу последовательностью спор",
+	revsporeseq_desc = "Когда проверяется счетчик из группы 8 - 1, а не с 1 – 8",
+
+	skipsporegroup_cmd = "skipsporegroup",
+	skipsporegroup_name = "Пропуск споры группы 1",
+	skipsporegroup_desc = "Проверка пропуска споры группы 1",
+	
+	graphic_cmd = "graphic",
+	graphic_name = "Графические иконки",
+	graphic_desc = "Когда проверяется отображение графического значка",
+	
+	sound_cmd = "sound",
+	sound_name = "Звуковые эффекты",
+	sound_desc = "Когда проверяются звуковые эффекты",
+	
+	spore_trigger = "Лотхиб применяет заклинание \"Вызов споры\".",
+	doomtrigger = "(.*) Неотвратимый рок.",
+	
+	group_spore_warn = "Группа %s ваша спора !",
+	whisper_spore_warn = "Заберите вашу спору !",	
+	
+	consumable_cmd = "consumable",
+	consumable_name = "Не предупреждать рейд использовать расходные материалы (A)",
+	consumable_desc = "Когда проверка не предупреждает рейд использовать расходные материалы. Требуется помощь (A)",
+	
+	shadowpot = "-- Выпейте зелье защиты от темной магии ! --",
+	bandage = "-- Используйте свои бинты ! --",
+	wrtorhs = "-- Камень здоровя или Плод кнутокорня ! --",
+	shadowpotandbandage = "-- Используйте зелье защиты от темной магии и бинты ! --",
+	noconsumable = "-- Не используйте сейчас свои расходные материалы ! --",
+	
+	soundshadowpot = "Interface\\Addons\\BigWigs_LoathebTactical\\sound\\potion.wav",
+	soundbandage = "Interface\\Addons\\BigWigs_LoathebTactical\\sound\\bandage.wav",
+	soundwrtorhs = "Interface\\Addons\\BigWigs_LoathebTactical\\sound\\healthstone.wav",
+	soundshadowpotandbandage = "Interface\\Addons\\BigWigs_LoathebTactical\\sound\\potionandbandage.wav",
+	soundgoforbuff = "Interface\\Addons\\BigWigs_LoathebTactical\\sound\\goforbuff.wav",
+	
+	resetmsg = "Bigwigs Loatheb тактический модуль сброшен"
+
+} end )
+
 L:RegisterTranslations("zhCN", function() return {
 	--spore_name = "不要提醒队伍去吃孢子",
 	--spore_desc = "选中后·不·会·在RW，M语或者用团队标记来提醒去吃孢子",

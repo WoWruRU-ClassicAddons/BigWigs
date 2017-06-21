@@ -28,6 +28,15 @@ L:RegisterTranslations("enUS", function() return {
 	["target"] = true,
 } end)
 
+L:RegisterTranslations("ruRU", function() return {
+	["KLHTM Target"] = "KLHTM Цель",
+	["klhtmt"] = "klhtmt",
+	["Options for the setting KLH master target."] = "Опции настройки KLH мастера метки.",
+	["Set the KLH Threatmeter master target when a BigWigs boss module is enabled."] = "Устанавливать KLH Threatmeter мастер метки, когда активный босс модуль BigWigs.",
+	["Set master target"] = "Установить мастер метки",
+	["target"] = "target",
+} end)
+
 L:RegisterTranslations("zhTW", function() return {
 --Bell@尖石 翻譯
 	["KLHTM Target"] = "KLHTM 目標",

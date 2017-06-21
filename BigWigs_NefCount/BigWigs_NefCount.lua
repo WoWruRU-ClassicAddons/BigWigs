@@ -57,6 +57,49 @@ L:RegisterTranslations("enUS", function() return {
 	["print_desc"] = "Print Drakonid counts in the chat window when Nefarian lands",
 } end)
 
+L:RegisterTranslations("ruRU", function() return {
+	["disabletrigger"] = "Нефариан погибает.",
+	["hidetrigger"] = "Браво, слуги мои! Смертные утрачивают мужество! Поглядим же, как они справятся с истинным владыкой Черной горы!!!",
+	["resettrigger"] = "Ну что ж, поиграем!",
+
+	["trigger1"] = "^(.+) погибает.",
+
+	["warn1"] = "%d %ss убито.",
+	["warn2"] = "%d %ss и %d %ss убито.",
+	["warn3"] = "%d дракониды поражены - скоро Нефариан!",
+
+	["RED"] = "Красный драконид",
+	["GREEN"] = "Зеленый драконид",
+	["BLUE"] = "Синий драконид",
+	["BRONZE"] = "Бронзовый драконид",
+	["BLACK"] = "Черный драконид",
+	["CHROMATIC"] = "Хроматический драконид",
+	["TOTAL"] = "Всего драконидов",
+
+	["Nefarian landing! %s kills counted."] = "Нефариан приземляется! Подсчет убийств %s.",
+	["%d %s"] = "%d %s",
+	[", "] = ", ",
+	[" and "] = " и ",
+
+	-- AceConsole
+	["cmd"] = "nefcount",
+	["bar_cmd"] = "bar",
+	["bar_name"] = "Полоса счетчика",
+	["bar_desc"] = "Отображает полосу счетчика  драконидов",
+	["sbars_cmd"] = "sbars",
+	["sbars_name"] = "Отдельная полоса счетчика",
+	["sbars_desc"] = "Отображает полосу равную цвету драконида",
+	["warn_cmd"] = "warn",
+	["warn_name"] = "Предупреждающие сообщения",
+	["warn_desc"] = "Дисплей, предупреждающий сообщением на 32 и 37 убийствах драконидов",
+	["swarns_cmd"] = "swarns",
+	["swarns_name"] = "Отдельное сообщение предупреждения",
+	["swarns_desc"] = "Отображает предупреждающее сообщение, когда убито 10 и 15 драконидов каждого цвета",
+	["print_cmd"] = "print",
+	["print_name"] = "Сообщение подсчета драконидов",
+	["print_desc"] = "Выводит сообщение в окне чата, подсчитывающее драконидов, когда Нефариан на земле.",
+} end)
+
 L:RegisterTranslations("deDE", function() return {
 	["disabletrigger"] = "Nefarian stirbt.",
 	["hidetrigger"] = "Sehr gut, meine Diener.",

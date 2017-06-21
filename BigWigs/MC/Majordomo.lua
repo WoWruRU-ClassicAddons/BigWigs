@@ -43,6 +43,36 @@ L:RegisterTranslations("enUS", function() return {
 	dmg_desc = "Warn for Damage Shields",
 } end)
 
+L:RegisterTranslations("ruRU", function() return {
+	disabletrigger = "Это невозможно! Остановитесь, смертные. Я вынужден сдаться. Вы бесцеремонно вторглись сюда, чтобы похитить тайны Живого Пламени. Но вы пожалеете о своем безрассудстве. Я призову своего господина, и вы едва ли переживете встречу с ним. Однако вы можете заглянуть в его обитель... если посмеете!",
+
+	trigger1 = "Отражение магии",
+	trigger2 = "Ранящий щит",
+	trigger3 = "Действие эффекта \"Отражение магии\", наложенного на",
+	trigger4 = "Действие эффекта \"Ранящий щит исчезает\", наложенного на",
+
+	warn1 = "Отражение магии на 10 сек.!",
+	warn2 = "Ранящий щит на 10 сек.!",
+	warn3 = "5 сек. до усиления!",
+	warn4 = "Отражение магии спал!",
+	warn5 = "DРанящий щит спал!",
+	bosskill = "Мажордом Экзекутус - пал!",
+
+	bar1text = "Отражение магии",
+	bar2text = "Ранящий щит",
+	bar3text = "Новое усиление",
+
+	cmd = "Majordomo",
+	
+	magic_cmd = "magic",
+	magic_name = "Отражение магии",
+	magic_desc = "Предупреждает о Отражение магии",
+	
+	dmg_cmd = "dmg",
+	dmg_name = "Ранящий щит",
+	dmg_desc = "Предупреждает о Ранящем щите",
+} end)
+
 L:RegisterTranslations("zhCN", function() return {
 	disabletrigger = "不可能！等一下",
 
@@ -188,7 +218,7 @@ BigWigsMajordomo.revision = tonumber(string.sub("$Revision: 16639 $", 12, -3))
 ------------------------------
 
 function BigWigsMajordomo:OnEnable()
-	self:RegisterEvent("CHAT_MSG_SPELL_PERIODIC_CREATURE_BUFFS")
+	self:RegisterEvent("CHAT_MSG_SPELL_PERIODIC_CREATURE_DAMAGE")
 	self:RegisterEvent("CHAT_MSG_SPELL_AURA_GONE_OTHER")
 	self:RegisterEvent("CHAT_MSG_MONSTER_YELL")
 	aura = nil
@@ -209,7 +239,7 @@ function BigWigsMajordomo:CHAT_MSG_MONSTER_YELL(msg)
 	end
 end
 
-function BigWigsMajordomo:CHAT_MSG_SPELL_PERIODIC_CREATURE_BUFFS(msg)
+function BigWigsMajordomo:CHAT_MSG_SPELL_PERIODIC_CREATURE_DAMAGE(msg)
 	if (string.find(msg, L["trigger1"]) and not aura and self.db.profile.magic) then self:NewPowers(1)
 	elseif (string.find(msg, L["trigger2"]) and not aura and self.db.profile.dmg) then self:NewPowers(2) end
 end

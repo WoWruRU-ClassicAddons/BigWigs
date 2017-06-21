@@ -49,6 +49,45 @@ L:RegisterTranslations("enUS", function() return {
 	aoeknock_desc = "Warn for Wrath of Ragnaros knockback",
 } end)
 
+L:RegisterTranslations("ruRU", function() return {
+	knockback_trigger = "Отведай пламя Сульфурона!",
+	submerge_trigger = "ПРИДИТЕ, МОИ СЛУГИ! ЗАЩИТИТЕ СВОЕГО ХОЗЯИНА!",
+	engage_trigger = "ЧТО ЖЕ ДО ВАС, СМЕРТНЫЕ... ВЫ НАШЛИ ТО, ЧТО ИСКАЛИ. УЗРИТЕ СИЛУ РАГНАРОСА!",
+
+	knockback_message = "Отбрасывание!",
+	knockback_soon_message = "5 сек. до отбрасывания!",
+	submerge_message = "Рагнарос погружается на 90 сек. В бой вступают Сыны Пламени!",
+	emerge_soon_message = "15 сек. до появления Рагнароса!",
+	emerge_message = "Рагнарос вступил в бой, 3 минуты до его погружения!",
+	submerge_60sec_message = "60 сек. до погружения!",
+	submerge_20sec_message = "20 сек. до погружения!",
+
+	knockback_bar = "Массовое отбрасывание",
+	emerge_bar = "Появление Раграноса",
+	submerge_bar = "Погружение Рагнароса",
+
+	sonofflame = "Сын Пламени",
+	sonsdeadwarn = "%d из 8 Сынов Пламени мертвы!",
+
+	cmd = "Ragnaros",
+
+	emerge_cmd = "emerge",
+	emerge_name = "Появление",
+	emerge_desc = "Предупреждает о появлении Рагнароса",
+
+	sondeath_cmd = "sondeath",
+	sondeath_name = "Убито Сынов Пламени",
+	sondeath_desc = "Предупреждает о смерти Сынов Пламени",
+
+	submerge_cmd = "submerge",
+	submerge_name = "Погружение",
+	submerge_desc = "Предупреждает о погружении и Сынах Пламени",
+
+	aoeknock_cmd = "aoeknock",
+	aoeknock_name = "Отбрасывание",
+	aoeknock_desc = "Предупреждает об отбрасывании",
+} end)
+
 L:RegisterTranslations("zhCN", function() return {
 	knockback_trigger = "^尝尝萨弗隆的火焰吧",
 	submerge_trigger = "^出现吧，我的奴仆",

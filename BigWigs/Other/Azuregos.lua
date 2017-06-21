@@ -31,6 +31,28 @@ L:RegisterTranslations("enUS", function() return {
 	shieldbar = "Magic Shield",
 } end )
 
+L:RegisterTranslations("ruRU", function() return {
+	cmd = "Azuregos",
+
+	teleport_cmd = "teleport",
+	teleport_name = "Телепорт",
+	teleport_desc = "Предупреждает о телепорте",
+
+	shield_cmd = "shield",
+	shield_name = "Щит",
+	shield_desc = "Предупреждает о щите",
+
+	trigger1 = "Сюда, малыши. Сразитесь со мной!",
+	trigger2 = "Отражение исчезает. Цель: Азурегос.",
+	trigger3 = "Азурегос получает: Отражение.",
+
+	warn1 = "Телепорт!",
+	warn2 = "Магический щит спал!",
+	warn3 = "Магический щит повешан!",
+
+	shieldbar = "Магический щит",
+} end )
+
 L:RegisterTranslations("deDE", function() return {
 	teleport_name = "Teleport",
 	teleport_desc = "Warnung f\195\188r Azuregos Teleport.",

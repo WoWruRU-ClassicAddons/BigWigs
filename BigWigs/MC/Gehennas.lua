@@ -26,6 +26,21 @@ L:RegisterTranslations("enUS", function() return {
 	curse_desc = "Warn for Gehennas' Curse",
 } end)
 
+L:RegisterTranslations("ruRU", function() return {
+	trigger1 = "Проклятие Гееннаса",
+
+	warn1 = "5 сек. до Проклятия Гееннаса",
+	warn2 = "Проклятие Гееннаса - 30 сек. до следующего!",
+
+	bar1text = "Проклятие Гееннаса",
+
+	cmd = "Gehennas",
+	
+	curse_cmd = "curse",
+	curse_name = "Проклятие Гееннаса",
+	curse_desc = "Предупреждает о Проклятии Гееннаса",
+} end)
+
 L:RegisterTranslations("zhCN", function() return {
 	trigger1 = "受到了基赫纳斯的诅咒",
 

@@ -34,6 +34,31 @@ L:RegisterTranslations("enUS", function() return {
 	
 } end )
 
+L:RegisterTranslations("ruRU", function() return {
+	cmd = "Jeklik",
+
+	heal_cmd = "heal",
+	heal_name = "Исцеление",
+	heal_desc = "Предупреждает о исцелении",
+
+	bomb_cmd = "bomb",
+	bomb_name = "Бомбы",
+	bomb_desc = "Предупреждает о бомбах",
+
+	swarm_cmd = "swarm",
+	swarm_name = "Летучие мыши",
+	swarm_desc = "Предупреждает о летучих мышах.",
+
+	swarm_trigger = "испускает оглушительный крик",
+	bomb_trigger = "Я приказываю тебе пламя, спустись с небес и сожги  этих захватчиков!",
+	heal_trigger = "начинает применять Великое исцеление!",
+
+	swarm_message = "Надвигается стая летучих мышей!",
+	bomb_message = "Бомбы!",
+	heal_message = "Применяет исцеление!",
+	
+} end )
+
 L:RegisterTranslations("frFR", function() return {
 	bomb_trigger =  "Qu'une pluie de feu s'abatte sur les envahisseurs !",
 	heal_trigger = "commence \195\160 lancer un sort de Soins exceptionnels !",

@@ -30,6 +30,27 @@ L:RegisterTranslations("enUS", function() return {
 	blink_desc = "Warn when Shazzrah Blinks",
 } end)
 
+L:RegisterTranslations("ruRU", function() return {
+	trigger1 = "Врата Шаззраха",
+	trigger2 = "Шаззрах получает эффект \"Магическое заземление\".",
+
+	warn1 = "Скачек - ~45 сек. до следующего!",
+	warn2 = "~5 секунд до Скачка!",
+	warn3 = "Шаззрах получает Магическое заземление!",
+
+	bar1text = "Скачек",
+
+	cmd = "Shazzrah",
+	
+	selfbuff_cmd = "selfbuff",
+	selfbuff_name = "Магическое заземление",
+	selfbuff_desc = "Предупреждает о получении Магического заземления Шаззрахом",
+	
+	blink_cmd = "blink",
+	blink_name = "Скачек",
+	blink_desc = "Данная способность работает не так, как должна. Не возможно отследить!",
+} end)
+
 L:RegisterTranslations("zhCN", function() return {
 	trigger1 = "沙斯拉尔施放了沙斯拉尔之门。",
 	trigger2 = "沙斯拉尔获得了衰减魔法的效果",

@@ -2,6 +2,8 @@
 
 ## Title: Big Wigs [|cffeda55fMolten Core|r]
 ## Notes: Big Wigs Molten Core Modules
+## Title-ruRU: Big Wigs [|cffeda55fОгненные Недра|r]
+## Notes-ruRU: Модуль Big Wigs - Огненные Недра
 ## Title-zhTW: Big Wigs [|cffeda55f熔火之心|r]
 ## Notes-zhTW: Big Wigs 熔火之心模組
 ## Author: Ammo, Rabbit

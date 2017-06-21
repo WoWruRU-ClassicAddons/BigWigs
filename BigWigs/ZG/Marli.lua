@@ -29,6 +29,24 @@ L:RegisterTranslations("enUS", function() return {
 	drainlife_message = "High Priestess Mar'li is draining life!",
 } end )
 
+L:RegisterTranslations("ruRU", function() return {
+	cmd = "Marli",
+
+	spider_cmd = "spider",
+	spider_name = "Пауки",
+	spider_desc = "Предупреждает о появлении пауков",
+
+	drain_cmd = "drain",
+	drain_name = "Похищение",
+	drain_desc = "Предупреждает о похищении жизни",
+
+	spiders_trigger = "Помогите мне, дети мои!",
+	drainlife_trigger = "Похищение жизни",
+
+	spiders_message = "Появление пауков!",
+	drainlife_message = "Верховная жрица Мар'ли использует похищение жизни!",
+} end )
+
 L:RegisterTranslations("deDE", function() return {
 	spider_name = "Spinnen",
 	spider_desc = "Warnung, wenn Hohepriesterin Mar'li Spinnen beschw\195\182rt.",
@@ -119,6 +137,9 @@ function BigWigsMarli:OnEnable()
 	self:RegisterEvent("CHAT_MSG_MONSTER_YELL")
 	self:RegisterEvent("CHAT_MSG_COMBAT_HOSTILE_DEATH", "GenericBossDeath")
 	self:RegisterEvent("CHAT_MSG_SPELL_CREATURE_VS_CREATURE_BUFF")
+	self:RegisterEvent("CHAT_MSG_SPELL_PERIODIC_PARTY_DAMAGE") -- похищение жизни на группа
+	self:RegisterEvent("CHAT_MSG_SPELL_PERIODIC_SELF_DAMAGE") -- похищение жизни на себе
+	self:RegisterEvent("CHAT_MSG_SPELL_PERIODIC_FRIENDLYPLAYER_DAMAGE") -- похищение жизни на дружелюбном
 end
 
 ------------------------------
@@ -138,3 +159,23 @@ function BigWigsMarli:CHAT_MSG_SPELL_CREATURE_VS_CREATURE_BUFF( msg )
 	end
 end
 
+function BigWigsMarli:CHAT_MSG_SPELL_PERIODIC_PARTY_DAMAGE( msg )
+	if self.db.profile.drain and string.find(msg, L["drainlife_trigger"]) and lastdrain < (GetTime()-3) then
+		lastdrain = GetTime()
+		self:TriggerEvent("BigWigs_Message", L["drainlife_message"], "Urgent")
+	end
+end
+
+function BigWigsMarli:CHAT_MSG_SPELL_PERIODIC_SELF_DAMAGE( msg )
+	if self.db.profile.drain and string.find(msg, L["drainlife_trigger"]) and lastdrain < (GetTime()-3) then
+		lastdrain = GetTime()
+		self:TriggerEvent("BigWigs_Message", L["drainlife_message"], "Urgent")
+	end
+end
+
+function BigWigsMarli:CHAT_MSG_SPELL_PERIODIC_FRIENDLYPLAYER_DAMAGE( msg )
+	if self.db.profile.drain and string.find(msg, L["drainlife_trigger"]) and lastdrain < (GetTime()-3) then
+		lastdrain = GetTime()
+		self:TriggerEvent("BigWigs_Message", L["drainlife_message"], "Urgent")
+	end
+end

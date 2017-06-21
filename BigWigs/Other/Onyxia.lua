@@ -39,6 +39,36 @@ L:RegisterTranslations("enUS", function() return {
 	warn4 = "Fear in 1.5sec!",
 } end )
 
+L:RegisterTranslations("ruRU", function() return {
+	cmd = "Onyxia",
+
+	deepbreath_cmd = "deepbreath",
+	deepbreath_name = "Глубокий вдох",
+	deepbreath_desc = "Предупреждает о глубоком вдохе Ониксии",
+
+	phase2_cmd = "phase2",
+	phase2_name = "Фаза 2",
+	phase2_desc = "Предупреждает о фазе 2",
+
+	phase3_cmd = "phase3",
+	phase3_name = "Фаза 3",
+	phase3_desc = "Предупреждает о фазе 3",
+
+	onyfear_cmd = "onyfear",
+	onyfear_name = "Страх",
+	onyfear_desc = "Предупреждает о Раскатистом реве на фазе 3",
+
+	trigger1 = "%s делает глубокий вдох...",
+	trigger2 = "Эта бессмысленная возня вгоняет меня в тоску. Я сожгу вас всех!",
+	trigger3 = "Похоже, вам требуется преподать еще один урок, смертные!",
+	trigger4 = "Ониксия начинает использовать \"Раскатистый рев\".",
+
+	warn1 = "Глубокий вдох!",
+	warn2 = "Фаза 2!",
+	warn3 = "Фаза 3!",
+	warn4 = "Страх через 1.5 сек.!",
+} end )
+
 L:RegisterTranslations("frFR", function() return {
 	deepbreath_name = "Alerte Grande inspiration",
 	deepbreath_desc = "Pr\195\169viens quand Onyxia se pr\195\169pare \195\160 prendre une grande inspiration.",

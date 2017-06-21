@@ -77,6 +77,49 @@ L:RegisterTranslations("enUS", function() return {
 	
 } end )
 
+L:RegisterTranslations("ruRU", function() return {
+	cmd = "ThaddiusArrows",
+
+	graphic_cmd = "garrows",
+	graphic_name = "Графические стрелки",
+	graphic_desc = "Показывает графические стрелки",
+
+	text_cmd = "tarrows",
+	text_name = "Текстовые стрелки",
+	text_desc = "Показывает текстовые стрелки",
+
+	sound_cmd = "sarrows",
+	sound_name = "Звуковые эффекты",
+	sound_desc = "Play Direction Sound Effects",
+
+	strat_cmd = "strat",
+	strat_name = "Стратегия",
+	strat_desc = "Выберите стратегию для использования перемещения",
+	strat_validate = { "Circular, L/R", "Circular, R/L", "Run Through" },
+
+	setstrategy_cmd = "bwtabc",
+	setstrategy_name = "Транслировать стратегию",
+	setstrategy_desc = "Сообщить текущую стратегию в рейд",
+
+	["Thaddius strategy is set to "] = "Стратегия на Таддиуса установлена ",
+	["Make sure everyone in the raid has the same strategy set!"] = "Убедитесь, что все члены рейда, имеют туже установленную стратегию!",
+	["Invalid Thaddius strategy, resetting to default."] = "Неверная стратегия, сброшено на стандартную.",
+	["You can run the command /bwtabc to broadcast your strategy and force your raid to use it."] = "Вы можете запустить команду /bwtabc, чтобы транслировать свою стратегию и заставить ваш рейд использовать ее.",
+	["You can't broadcast the strategy if you are not the leader or promoted in the raid group."] = "Вы не можете транслировать свою стратегию. Вы не являетесь лидером группы или его помощником.",
+	["Broadcasting strategy ..."] = "Трансляция стратегии ...",
+	["Strategy broadcast detected from %s. Strategy set to %s."] = "Обнаружена трансляция стратегии от %s. Установка стратегии %s.",
+	["Invalid Thaddius strategy received from %s."] = "Получена неверная стратегия от %s.",
+
+	soundleft = "Interface\\AddOns\\BigWigs_ThaddiusArrows\\sounds\\GoLeftUS.wav",
+	soundright = "Interface\\AddOns\\BigWigs_ThaddiusArrows\\sounds\\GoRightUS.wav",
+	soundacross = "Interface\\AddOns\\BigWigs_ThaddiusArrows\\sounds\\SwitchSidesUS.wav",
+
+	warnleft = "<----  ИДИТЕ НАЛЕВО  <---- ИДИТЕ НАЛЕВО <----",
+	warnright = "---->  ИДИТЕ НАПРАВО  ----> ИДИТЕ НАПРАВО ---->",
+	warnacross = "^^^^ СМЕНИТЕ СТОРОНУ ^^^^ СМЕНИТЕ СТОРОНУ ^^^^",
+	
+} end )
+
 L:RegisterTranslations("koKR", function() return {
 	graphic_name = "시각적인 화살표",
 	graphic_desc = "시각적인 화살표를 표시합니다.",

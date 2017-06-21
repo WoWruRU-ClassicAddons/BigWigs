@@ -1,6 +1,7 @@
 ## Interface: 11200
 ## Title: Big Wigs |cffff0000+|r|cffffffffKLHTM Target|r
 ## Notes: Sets the KLH Threatmeter main target when a BigWigs boss module enables.
+## Notes-ruRU: Устанавливает основную цель для KLH Threatmeter, когда активный босс модуль BigWigs.
 ## Author: Rabbit
 ## X-Website: http://www.wowace.com
 ## X-eMail: rabbit.magtheridon@gmail.com
@@ -13,4 +14,3 @@
 ## SavedVariables: BigWigsKLHTMTargetDB
 
 BigWigs_KLHTMTarget.lua
-

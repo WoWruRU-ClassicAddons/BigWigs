@@ -77,6 +77,59 @@ L:RegisterTranslations("enUS", function() return {
 
 } end )
 
+L:RegisterTranslations("ruRU", function() return {
+	cmd = "RazAssist",
+
+	debuff_cmd = "debuff",
+	debuff_name = "Таймер Изнурение разума",
+	debuff_desc = "Отображает полосу времени дебафа Изнурение разума",
+
+	taunt_cmd = "taunt",
+	taunt_name = "Провокация",
+	taunt_desc = "Отображает полосу времени Провокации",
+
+	broadcast_cmd = "broadcast",
+	broadcast_name = "Вещать состояние дебафа",
+	broadcast_desc = "Вещание в рейда о исчезновении дебафа",
+
+	taunt_bar = "Провокация",
+	taunt_trigger = "Ученик рыцаря смерти терпит урон. Причина - Провокация%.",
+
+	mindexhaustion_bar = "%s - Изнурение",
+	mindexhaustion = "Изнурение разума",
+	mindexhaustion_5sec = "%s через 5 сек!",
+
+	["rtPath1"] = "Interface\\AddOns\\BigWigs_RazuviousAssistant\\icons\\Star",
+	["rtPath2"] = "Interface\\AddOns\\BigWigs_RazuviousAssistant\\icons\\Circle",
+	["rtPath3"] = "Interface\\AddOns\\BigWigs_RazuviousAssistant\\icons\\Diamond",
+	["rtPath4"] = "Interface\\AddOns\\BigWigs_RazuviousAssistant\\icons\\Triangle",
+	["rtPath5"] = "Interface\\AddOns\\BigWigs_RazuviousAssistant\\icons\\Moon",
+	["rtPath6"] = "Interface\\AddOns\\BigWigs_RazuviousAssistant\\icons\\Square",
+	["rtPath7"] = "Interface\\AddOns\\BigWigs_RazuviousAssistant\\icons\\Cross",
+	["rtPath8"] = "Interface\\AddOns\\BigWigs_RazuviousAssistant\\icons\\Skull",
+
+	["raidIcon0"] = "Неизвестно",
+	["raidIcon1"] = "Звезда",
+	["raidIcon2"] = "Круг",
+	["raidIcon3"] = "Ромб",
+	["raidIcon4"] = "Треугольник",
+	["raidIcon5"] = "Полумесяц",
+	["raidIcon6"] = "Квадрат",
+	["raidIcon7"] = "Крест",
+	["raidIcon8"] = "Череп",
+
+	["raidColor0"] = "Красный",
+	["raidColor1"] = "Желтый",
+	["raidColor2"] = "Оранжевый",
+	["raidColor3"] = "Розовый",
+	["raidColor4"] = "Зеленый",
+	["raidColor5"] = "Белый",
+	["raidColor6"] = "Синий",
+	["raidColor7"] = "Красный",
+	["raidColor8"] = "Белый",
+
+} end )
+
 L:RegisterTranslations("zhTW", function() return {
 --Bell@尖石 繁體化
 	cmd = "講師助手",

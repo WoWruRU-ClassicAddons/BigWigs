@@ -27,6 +27,24 @@ L:RegisterTranslations("enUS", function() return {
 	phase2_message = "Incoming phase 2 - poison clouds spawning!",
 } end )
 
+L:RegisterTranslations("ruRU", function() return {
+	cmd = "Venoxis",
+
+	renew_cmd = "renew",
+	renew_name = "Обновление",
+	renew_desc = "Предупреждает о обновлении",
+
+	phase_cmd = "phase",
+	phase_name = "Фаза 2",
+	phase_desc = "Предупреждает о переходе на фазу 2",
+
+	renew_trigger = "Верховный жрец Веноксис получает: Обновление.",
+	phase2_trigger = "Кольца сссмерти сожмутся вокруг вассс!",
+
+	renew_message = "ОБНОВЛЕНИЕ!",
+	phase2_message = "Наступает фаза 2 - появляются ядовитые облака!",
+} end )
+
 L:RegisterTranslations("deDE", function() return {
 	renew_name = "Erneuerung",
 	renew_desc = "Warnung, wenn Venoxis Erneuerung auf sich wirkt.",

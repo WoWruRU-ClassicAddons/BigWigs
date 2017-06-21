@@ -6,6 +6,7 @@
 local BZ = AceLibrary("Babble-Zone-2.2")
 local BB = AceLibrary("Babble-Boss-2.2")
 local L = AceLibrary("AceLocale-2.2"):new("BigWigs")
+local waterfall = AceLibrary("Waterfall-1.0")
 
 local surface = AceLibrary("Surface-1.0")
 
@@ -18,7 +19,6 @@ surface:Register("BantoBar", "Interface\\AddOns\\BigWigs\\textures\\default")
 ----------------------------
 --      Localization      --
 ----------------------------
-
 L:RegisterTranslations("enUS", function() return {
 	["%s mod enabled"] = true,
 	["Target monitoring enabled"] = true,
@@ -65,6 +65,56 @@ L:RegisterTranslations("enUS", function() return {
 	["Onyxia's Lair"] = "Onyxia",
 	["Naxxramas"] = "Naxxramas",
 	["Silithus"] = true,
+	["Outdoor Raid Bosses"] = "Outdoor",
+	["Outdoor Raid Bosses Zone"] = "Outdoor Raid Bosses", -- DO NOT EVER TRANSLATE untill I find a more elegant option
+} end)
+
+L:RegisterTranslations("ruRU", function() return {
+	["%s mod enabled"] = "%s мод включен",
+	["Target monitoring enabled"] = "Мониторинг цели включен",
+	["Target monitoring disabled"] = "Мониторинг цели выключен",
+	["%s has been defeated"] = "%s побеждён",     -- "<boss> has been defeated"
+	["%s have been defeated"] = "%s побеждены",    -- "<bosses> have been defeated"
+
+	-- AceConsole strings
+	["boss"] = "boss",
+	["Bosses"] = "Боссы",
+	["Options for boss modules."] = "Опции для босс модулей.",
+	["Options for bosses in %s."] = "Опции для боссов в %s.", -- "Options for bosses in <zone>"
+	["Options for %s (r%s)."] = "Опции для %s (r%d).",     -- "Options for <boss> (<revision>)"
+	["plugin"] = "plugin",
+	["Plugins"] = "Плагины",
+	["Options for plugins."] = "Опции для плагинов.",
+	["extra"] = "extra",
+	["Extras"] = "Дополнения",
+	["Options for extras."] = "Опции для дополнения.",
+	["toggle"] = "toggle",
+	["Active"] = "Активен",
+	["Activate or deactivate this module."] = "Активация или деактивация модуля",
+	["reboot"] = "reboot",
+	["Reboot"] = "Перезагрузка",
+	["Reboot this module."] = "Перезагрузка данного модуля",
+	["debug"] = "debug",
+	["Debugging"] = "Отладка",
+	["Show debug messages."] = "Показать отладочные сообщения.",
+	bosskill_cmd = "убит",
+	bosskill_name = "Смерть босса",
+	bosskill_desc = "Объявлять о смерти босса.",
+
+	["Other"] = "Other",
+	["Load"] = "Загрузить",
+	["Load All"] = "Загрузить все",
+	["Load all %s modules."] = "Загрузить все модули %s.",
+	
+	-- AceConsole zone commands
+	["Zul'Gurub"] = "ЗГ",
+	["Molten Core"] = "МК",
+	["Blackwing Lair"] = "БВЛ",
+	["Ahn'Qiraj"] = "АК40",
+	["Ruins of Ahn'Qiraj"] = "АК20",
+	["Onyxia's Lair"] = "Ониксия",
+	["Naxxramas"] = "Наксрамас",
+	["Silithus"] = "Силитус",
 	["Outdoor Raid Bosses"] = "Outdoor",
 	["Outdoor Raid Bosses Zone"] = "Outdoor Raid Bosses", -- DO NOT EVER TRANSLATE untill I find a more elegant option
 } end)
@@ -329,7 +379,9 @@ BigWigs.cmdtable = {type = "group", handler = BigWigs, args = {
 		disabled = function() return not BigWigs:IsActive() end,
 	},
 }}
-BigWigs:RegisterChatCommand({"/bw", "/BigWigs"}, BigWigs.cmdtable)
+BigWigs:RegisterChatCommand({"/bwcl", "/BigWigscl"}, BigWigs.cmdtable)
+BigWigs:RegisterChatCommand({ "/bw", "/BigWigs"}, function() waterfall:Open('BigWigs') end)
+waterfall:Register('BigWigs', 'aceOptions', BigWigs.cmdtable, 'title','BigWigs 2.0. Revision: 12403','colorR', 0.9, 'colorG', 0.7, 'colorB', 0.5) 
 BigWigs.debugFrame = ChatFrame5
 BigWigs.revision = tonumber(string.sub("$Revision: 18321 $", 12, -3))
 

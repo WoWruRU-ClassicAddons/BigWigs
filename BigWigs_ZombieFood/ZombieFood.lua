@@ -1,4 +1,4 @@
---[[
+﻿--[[
 --
 -- BigWigs Strategy Module 
 --
@@ -28,6 +28,21 @@ L:RegisterTranslations("enUS", function() return {
 
 	["%s has been Dazed!"] = true,
 	["Dazed"] = true,
+} end )
+
+L:RegisterTranslations("ruRU", function() return {
+	["Zombie Food"] = "Еда зомби",
+	["zombiefood"] = "zombiefood",
+	["Optionally broadcast the raid when someone gets Dazed."] = "Опционально транслировать в рейд, когда кто-то ошеломлен.",
+	["broadcast"] = "broadcast",
+	["Broadcast"] = "Вещание",
+	["Toggle broadcasting."] = "Вкл/Выкл вещание.",
+	["On"] = "Вкл",
+	["on"] = "on",
+	["Toggles the plugin on and off."] = "Вкл/Выкл плагин.",
+
+	["%s has been Dazed!"] = "%s - Ошеломлен!",
+	["Dazed"] = "Ошеломлен",
 } end )
 
 BigWigsZombieFood = BigWigs:NewModule(name)

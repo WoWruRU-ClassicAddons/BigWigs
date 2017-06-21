@@ -32,6 +32,29 @@ L:RegisterTranslations("enUS", function() return {
 	frenzy_desc = "Warn when Magmadar goes into a frenzy",
 } end)
 
+L:RegisterTranslations("ruRU", function() return {
+	-- Chat message triggers
+	trigger1 = "%s впадает в неистовый гнев!",
+	trigger2 = "Паника.",
+
+	-- Warnings and bar texts
+	["Frenzy alert!"] = "Неистовый гнев!!",
+	["5 seconds until AoE Fear!"] = "5 секунд до массового страха!",
+	["AoE Fear - 30 seconds until next!"] = "Массовый страх - 30 сек. до следующего!",
+	["AoE Fear"] = "",
+
+	-- AceConsole strings
+	cmd = "Magmadar",
+	
+	fear_cmd = "fear",
+	fear_name = "Страх",
+	fear_desc = "Предупреждает о применении массового страха.",
+	
+	frenzy_cmd = "frenzy",
+	frenzy_name = "Неистовый гнев",
+	frenzy_desc = "Предупреждает о Неистовом гневе",
+} end)
+
 L:RegisterTranslations("koKR", function() return {
 	-- Chat message triggers
 	trigger1 = "%s|1이;가; 살기를 띤 듯한 광란의 상태에 빠집니다!",

@@ -1,4 +1,4 @@
-----------------------------------
+﻿----------------------------------
 --      Locals                  --
 ----------------------------------
 
@@ -19,6 +19,7 @@ local deathThrottle = nil
 ----------------------------------
 --      Localization            --
 ----------------------------------
+
 L:RegisterTranslations("enUS", function() return {
 	["respawntimers"] = true,
 	["Respawn Timers"] = true,
@@ -62,6 +63,52 @@ L:RegisterTranslations("enUS", function() return {
 	-- BWL Messages
 	["Death Talon"] = true,
 	["Taskmaster"] = true,
+
+} end )
+
+L:RegisterTranslations("ruRU", function() return {
+	["respawntimers"] = "respawntimers",
+	["Respawn Timers"] = "Таймер появления",
+	["Respawn timer bars and warnings for trash mobs."] = "Таймер появления и предупреждения для трэш мобов.",
+	["bars"] = "bars",
+	["Bars"] = "Полосы",
+	["Toggles showing bars for respawn times."] = "Вкл/Выкл отображение полос для таймера появлений.",
+	["messages"] = "messages",
+	["Messages"] = "Сообщения",
+	["Toggles showing messages for respawn times."] = "Вкл/Выкл отображение сообщений для таймера появлений.",
+
+	["%s %d respawns in %d sec"] = "%s %d респавн через %d сек.",
+	["%s %d respawned!"] = "%s %d респавнится!",
+	["Respawn: %s %d"] = "Респавн: %s %d",
+
+	-- Molten Core Triggers
+	["Ancient Core Hound"] = "Древняя гончая Недр",
+	["Lava Annihilator"] = "Лавовый уничтожитель",
+	["Lava Surger"] = "Лавовый волноплеск",
+	["Firelord"] = "Повелитель огня",
+	["Firewalker"] = "Огнеход", -- Lava Pack
+	["%s collapses and begins to smolder."] = "%s collapses and begins to smolder.", -- Hound Pack, emote.
+	-- Molten Core Messages
+	["Corehound"] = "ГончаяНедр",
+	["Annihilator"] = "Уничтожитель",
+	["Surger"] = "Волноплеск",
+	-- Firelord == Firelord.
+	["Lavapack"] = "ЛавовыйПак",
+	["Houndpack"] = "ПакГончей",
+
+	-- AQ Triggers
+	["Obsidian Eradicator"] = "Обсидиановый искоренитель",
+	["Anubisath Sentinel"] = "Анубисат-часовой",
+	-- AQ Messages
+	["Eradicator"] = "Искоренитель",
+	["Sentinel"] = "Часовой",
+
+	-- BWL Triggers
+	["Death Talon Hatcher"] = "Гнездовая Когтя Смерти",
+	["Blackwing Taskmaster"] = "Надсмотрщик из логова Крыла Тьмы",
+	-- BWL Messages
+	["Death Talon"] = "Гнездовая",
+	["Taskmaster"] = "Надсмотрщик",
 
 } end )
 

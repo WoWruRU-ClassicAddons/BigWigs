@@ -31,6 +31,25 @@ L:RegisterTranslations("enUS", function() return {
 	["Show it again with /bw plugin minimap."] = true,
 } end)
 
+L:RegisterTranslations("ruRU", function() return {
+	["|cff00ff00Module running|r"] = "|cff00ff00Модуль запущен|r",
+	["|cffeda55fClick|r to reset all running modules. |cffeda55fAlt+Click|r to disable them. |cffeda55fCtrl+Alt+Click|r to disable Big Wigs completely."] = "|cffeda55fЩёлкните|r, чтобы сбросить все запущенные модули. |cffeda55fAlt+Левый Клик|r - чтобы отключить их. |cffeda55fCtrl+Alt+Левый клик|r - чтобы отключить Big Wigs полностью.",
+	["|cffeda55fClick|r to enable."] = "|cffeda55fШёлкните|r, чтобы включить.",
+	["Big Wigs is currently disabled."] = "Big Wigs в данный момент отключен",
+	["Active boss modules"] = "Активные модули боссов:",
+	["hidden"] = "скрыть",
+	["shown"] = "показать",
+	["minimap"] = "minimap",
+	["Minimap"] = "Мини-карта",
+	["Toggle the minimap button."] = "Вкл/Выкл кнопку у мини-карты",
+	["All running modules have been reset."] = "Все запущенные модули сброшены",
+	["All running modules have been disabled."] = "Все запущенные модули отключены",
+	["%s reset."] = "%s сброшен.",
+	["%s disabled."] = "%s отключен.",
+	["%s icon is now %s."] = "%s метка теперь на %s.",
+	["Show it again with /bw plugin minimap."] = "Чтобы вновь отобразить кнопку, введите команду /bw hide",
+} end)
+
 L:RegisterTranslations("frFR", function() return {
 	["|cff00ff00Module running|r"] = "|cff00ff00Module d\195\169marr\195\169|r",
 	["|cffeda55fClick|r to reset all running modules. |cffeda55fAlt+Click|r to disable them. |cffeda55fCtrl+Alt+Click|r to disable Big Wigs completely."] = "|cffeda55fClic|r pour red\195\169marrer les modules actifs. |cffeda55fAlt+Clic|r pour les d\195\169sactiver. |cffeda55fCtrl+Alt+Clic|r pour d\195\169sactiver Big Wigs compl\195\168tement.",

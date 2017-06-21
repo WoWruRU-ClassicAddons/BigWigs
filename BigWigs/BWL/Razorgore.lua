@@ -41,6 +41,36 @@ L:RegisterTranslations("enUS", function() return {
 	phase_desc = "Alert on phase 1 and 2",
 } end)
 
+L:RegisterTranslations("ruRU", function() return {
+	cmd = "Razorgore",
+
+	start_trigger = "Враги в инкубаторе! Бейте тревогу! Защищайте яйца любой ценой!",
+	start_message = "Бритвосмерт в бещенстве! Помощники появятся через 45 секунд!",
+	start_soon = "Помощники через 5 секунд!",
+	start_mob = "Появляются помощники!",
+
+	mindcontrol_trigger = "Недоумки! Эти яйца ценнее, чем вы думаете!",
+	mindcontrol_message = "%s под контролем разума!",
+
+	egg_trigger = "Бритвосмерт Неукротимый применяет заклинание \"Уничтожение яйца\".",
+	egg_message = "%d/30 яиц уничтожено!",
+
+	phase2_trigger = "Бритвосмерт Неукротимый применяет заклинание \"Согревающее пламя\"(.*)",
+	phase2_message = "Все яйца уничтожены, Бритвосметр повержен!",
+
+	mc_cmd = "mindcontrol",
+	mc_name = "Контроль разума",
+	mc_desc = "Предупреждает, когда Бритвосмерт управляет разумом игроков.",
+
+	eggs_cmd = "eggs",
+	eggs_name = "Не подсчитывать яйца",
+	eggs_desc = "Не вести подсчет оставшихся яиц – данная опция не работает, нам нужно больше инициаторов.",
+
+	phase_cmd = "phase",
+	phase_name = "Фазы",
+	phase_desc = "Предупреждает о фазах 1 и 2.",
+} end)
+
 L:RegisterTranslations("koKR", function() return {
 	start_trigger = "침입자들이 들어왔다! 어떤 희생이 있더라도 알을 반드시 수호하라!",
 	start_message = "폭군 서슬송곳니 전투 시작",

@@ -29,6 +29,24 @@ L:RegisterTranslations("enUS", function() return {
 	bartext = "Supreme mode",
 } end )
 
+L:RegisterTranslations("ruRU", function() return {
+	cmd = "Kazzak",
+
+	supreme_cmd = "supreme",
+	supreme_name = "Режим ярости",
+	supreme_desc = "Предупреждает о ярости",
+
+	starttrigger = "За Легион! За Кил'джедена!",
+
+	engagewarn	 = "Лорд Каззак в исступлении, 3 мин. до режима ярости!",
+
+	supreme1min	 = "Режим ярости через 1 минуты!",
+	supreme30sec = "Режим ярости через 30 секунд!",
+	supreme10sec = "Режим ярости через 10 секунд!",
+
+	bartext = "Режим ярости",
+} end )
+
 L:RegisterTranslations("deDE", function() return {
 	supreme_name = "Supreme Mode",
 	supreme_desc = "Warnung vor Supreme Mode.",

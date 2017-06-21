@@ -61,6 +61,56 @@ L:RegisterTranslations("enUS", function() return {
 
 } end)
 
+L:RegisterTranslations("ruRU", function() return {
+	["Click to toggle debugging."] = "Кликните для вкл/выкл. отладки.",
+	["Debug"] = "Отладка",
+	["|cff00ff00On|r"] = "|cff00ff00Вкл|r",
+	["|cffff0000Off|r"] = "|cffff0000Откл|r",
+	["Debugging set to %s."] = "Отладка %s.",
+
+	["Stuff that is bundled with Big Wigs that we can debug."] = "Отладка параметров построенных на Big Wigs.",
+	["Builtin stuff"] = "Встроенный материал",
+	["Bars"] = "Полосы",
+	["Toggle debugging when bars are started and stopped manually."] = "Вкл/Выкл отладку, когда полосы запускаются и останавливаются вручную.",
+	["Messages"] = "Сообщения",
+	["Toggle debugging when messages are triggered."] = "Вкл/Выкл отладки во время тревожных сообщений.",
+	["Raid icon"] = "Рейдовые метки",
+	["Toggle debugging when a raid icon is set by Big Wigs."] = "Вкл/Выкл отладки, когда рейдовую метку ставит Big Wigs.",
+	["Target spotted"] = "Замеченная цели",
+	["Toggle debugging when a registered target is spotted."] = "Вкл/Выкл отладки, когда была замечена зарегистрированная цель.",
+	["Version query"] = "Запрос версии",
+	["Toggle debugging when recieving version query syncs."] = "Вкл/Выкл отладки, когда синхр. запрос получения версии.",
+	["Module handling"] = "Модуль обработки",
+	["Debug events for BigWigs module handling."] = "Отладка события BigWigs по обработки модуля.",
+	["EnableModule"] = "ВключитьМодуль",
+	["Toggle debugging of the EnableModule sync."] = "Вкл/Выкл отладку для синхр. ВключитьМодуль.",
+	["EnableExternal"] = "ВключитьВнешний",
+	["Toggle debugging of the EnableExternal sync."] = "Вкл/Выкл отладку синхр. ВключитьВнешний.",
+	["RebootModule"] = "ПерезагрузитьМодуль",
+	["Toggle debugging of the RebootModule event."] = "Вкл/Выкл отладку для события ПерезагрузитьМодуль.",
+	["All syncs"] = "Синхр. все",
+	["Toggle debugging on all syncs."] = "Вкл/Выкл отладку всех синхр.",
+
+	["Custom syncs"] = "Польз. синхр.",
+	["Specify your own syncs to watch for."] = "Укажите свою собственную синхр. для наблюдения.",
+	["Add sync"] = "Добавить синхр.",
+	["Adds a sync to the list."] = "Добавить синхр. в список.",
+	["<sync>"] = "<sync>",
+	["Remove sync"] = "Удалить синхр.",
+	["Remove a sync from the list."] = "Удалить синхр. со списка.",
+	["Remove %s."] = "Удалить %s.",
+	["Toggle debugging %s."] = "Вкл/Выкл отладку %s.",
+
+	["Debug frame set to %s."] = "Окно отладки установлено на %s.",
+	["Debug frame"] = "Окно отладки",
+	["Set debug chatframe."] = "Установить отладку в окно чата.",
+	["<frameName>"] = "<frameName>",
+
+	["|cff00ff00%s|r added to the custom sync list."] = "|cff00ff00%s|r добавлен в список пользов. синхр.",
+	["|cff00ff00%s|r removed from the custom sync list."] = "|cff00ff00%s|r удален из списка пользов. синхр.",
+
+} end)
+
 ----------------------------------
 --      Addon Declaration       --
 ----------------------------------
@@ -492,4 +542,3 @@ end
 function BigWigsDebugger:OnTextUpdate()
 	self:SetText(BigWigs:IsDebugging() and L["|cff00ff00On|r"] or L["|cffff0000Off|r"])
 end
-

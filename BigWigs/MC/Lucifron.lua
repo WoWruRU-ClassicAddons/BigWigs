@@ -35,6 +35,29 @@ L:RegisterTranslations("enUS", function() return {
 	doom_desc = "Warn for Impending Doom",
 } end)
 
+L:RegisterTranslations("ruRU", function() return {
+	trigger1 = "Проклятие Люцифрона",
+	trigger2 = "Надвигающийся рок",
+
+	warn1 = "5 секунд до Проклятия Люцифрона!",
+	warn2 = "Проклятие Люцифрона - 20 сек. до следующего!",
+	warn3 = "5 секунд до Надвигающегося рока",
+	warn4 = "Надвигающийся рок - 20 сек. до следующего!",
+
+	bar1text = "Проклятие Люцифрона",
+	bar2text = "Надвигающийся рок",
+
+	cmd = "Lucifron",
+	
+	curse_cmd = "curse",
+	curse_name = "Проклятие Люцифрона",
+	curse_desc = "Предупреждает о Проклятии Люцифрона",
+	
+	doom_cmd = "dmg",
+	doom_name = "Надвигающийся рок",
+	doom_desc = "Предупреждает о Надвигающемся роке",
+} end)
+
 L:RegisterTranslations("zhCN", function() return {
 	trigger1 = "受到了鲁西弗隆的诅咒",
 	trigger2 = "受到了末日降临",

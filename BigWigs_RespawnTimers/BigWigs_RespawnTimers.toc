@@ -1,6 +1,7 @@
-## Interface: 11200
+﻿## Interface: 11200
 ## Title: Big Wigs |cffff0000+|r|cffffffffRespawn Timers|r
 ## Notes: Respawn timer bars and warnings for trash mobs.
+## Notes-ruRU: Таймер появления и предупреждения для трэш мобов.
 ## Author: Rabbit
 ## X-Website: http://www.wowace.com
 ## X-eMail: rabbit.magtheridon@gmail.com
@@ -11,8 +12,6 @@
 ## Dependencies: BigWigs
 ## OptionalDeps: Ace2
 ## SavedVariables: BigWigsRespawnTimersDB
-
 ## X-BigWigs-LoadWithCore: 1
 
 BigWigs_RespawnTimers.lua
-

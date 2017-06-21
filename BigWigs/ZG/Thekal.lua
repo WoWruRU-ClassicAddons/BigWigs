@@ -27,6 +27,24 @@ L:RegisterTranslations("enUS", function() return {
 	heal_message = "Lor'Khan Casting Heal!",
 } end )
 
+L:RegisterTranslations("ruRU", function() return {
+	cmd = "Thekal",
+
+	heal_cmd = "heal",
+	heal_name = "Исцеление",
+	heal_desc = "Предупреждает об исцелении",
+
+	tiger_cmd = "tiger",
+	tiger_name = "Тигры",
+	tiger_desc = "Предупреждает о появлении тигров",
+
+	tigers_trigger = "Верховный жрец Текал выполняет действие \"Вызов зульских стражей\".",
+	heal_trigger = "Ревнитель Лор'Кхан начинает использовать \"Великое исцеление\".",
+
+	tigers_message = "ТИГРЫ!",
+	heal_message = "Лор'Кхан применяет исцеление!",
+} end )
+
 L:RegisterTranslations("deDE", function() return {
 	heal_name = "Heilung",
 	heal_desc = "Warnung, wenn Zealot Lor'Khan sich heilt.",

@@ -61,6 +61,57 @@ L:RegisterTranslations("enUS", function() return {
 
 } end )
 
+L:RegisterTranslations("ruRU", function() return {
+	cmd = "Chromaggus",
+
+	enrage_cmd = "enrage",
+	enrage_name = "Исступление",
+	enrage_desc = "Предупреждает о исступление на 20%",
+
+	frenzy_cmd = "frenzy",
+	frenzy_name = "Бешенство",
+	frenzy_desc = "Предупреждает о бешенстве.",
+
+	breath_cmd = "breath",
+	breath_name = "Дыхание",
+	breath_desc = "Предупреждает о дыхании.",
+
+	vulnerability_cmd = "vulnerability",
+	vulnerability_name = "Изменение уязвимости",
+	vulnerability_desc = "Сообщает когда изменяется уязвимость.",
+	
+	breath_trigger = "Хромаггус начинает применять заклинание \"(.+)\".",
+	vulnerability_test = "^[%w']+ [%w' ]+ ([%w]+) Хромаггус ([%d]+) ([%w ]+) ед. урона%..*",--? don't know
+	frenzy_trigger = "%s впадает в неистовый гнев!",
+	vulnerability_trigger = "%s изменяется, мерцая.",
+
+	hit = "наносит",
+	crit = "критический",
+
+	breath_warning = "%s через 10 секунд!",
+	breath_message = "%s кастуется!",
+	vulnerability_message = "Уязвимость: %s!",
+	vulnerability_warning = "УЯЗВИМОСТЬ К ЗАКЛИНАНИЯМ ИЗМЕНЕНА!",
+	frenzy_message = "БЕШЕНСТВО!",
+	enrage_warning = "СКОРО ИССТУПЛЕНИЕ!",
+
+	breath1 = "Искажение времени",
+	breath2 = "Разъедающая кислота",
+	breath3 = "Сожжение плоти",
+	breath4 = "Испепеление",
+	breath5 = "Ледяной ожог",
+
+	iconunknown = "Interface\\Icons\\INV_Misc_QuestionMark",
+	icon1 = "Interface\\Icons\\Spell_Arcane_PortalOrgrimmar",
+	icon2 = "Interface\\Icons\\Spell_Nature_Acid_01",
+	icon3 = "Interface\\Icons\\Spell_Fire_Fire",
+	icon4 = "Interface\\Icons\\Spell_Shadow_ChillTouch",
+	icon5 = "Interface\\Icons\\Spell_Frost_ChillingBlast",
+
+	castingbar = "Применяет %s",
+
+} end )
+
 L:RegisterTranslations("deDE", function() return {
 	enrage_name = "Wutanfall",
 	enrage_desc = "Warnung, wenn Chromaggus w\195\188tend wird. (ab 20%).",

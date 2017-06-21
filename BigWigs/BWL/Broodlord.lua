@@ -33,6 +33,30 @@ L:RegisterTranslations("enUS", function() return {
 	msbar_desc = "Shows a bar with the Mortal Strike duration",
 } end )
 
+L:RegisterTranslations("ruRU", function() return {
+	cmd = "Broodlord",
+
+	trigger1 = "([^%s]+) ([^%s]+) (.*)Смертельный удар%.$",
+
+	you = "Вы",
+	are = "потерпели",
+
+	warn1 = "Смертельный удар на вас!",
+	warn2 = "Смертельный удар на %s!",
+
+	youms_cmd = "youms",
+	youms_name = "Смертельный удар на вас",
+	youms_desc = "Предупреждает когда смертельный удар на вас.",
+
+	elsems_cmd = "elsems",
+	elsems_name = "Смертельный удар на другом",
+	elsems_desc = "Предупреждает когда смертельный удар ком-то другом.",
+
+	msbar_cmd = "msbar",
+	msbar_name = "Полоса Смертельного удара",
+	msbar_desc = "Показывает полосу длительности Смертельного удара.",
+} end )
+
 L:RegisterTranslations("zhCN", function() return {
 	trigger1 = "^(.+)受(.+)了致死打击",
 
@@ -154,7 +178,7 @@ end
 ------------------------------
 
 function BigWigsBroodlord:MSEvent(msg)
-	local _, _, EPlayer, EType = string.find(msg, L["trigger1"])
+	local _, _, EPlayer, EType, ETypee = string.find(msg, L["trigger1"])
 	if (EPlayer and EType) then
 		if EPlayer == L["you"] and EType == L["are"] and self.db.profile.youms then
 			self:TriggerEvent("BigWigs_Message", L["warn1"], "Personal", true)

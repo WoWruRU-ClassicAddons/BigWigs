@@ -39,6 +39,36 @@ L:RegisterTranslations("enUS", function() return {
 	
 } end )
 
+L:RegisterTranslations("ruRU", function() return {
+	cmd = "Emeriss",
+
+	noxious_cmd = "noxious",
+	noxious_name = "Пагубное дыхание",
+	noxious_desc = "Предупреждает о Пагубном дыхании",
+
+	volatileyou_cmd = "volatileyou",
+	volatileyou_name = "Летучая зараза на вас",
+	volatileyou_desc = "Предупреждает когда на вас Летучая зараза",
+
+	volatileother_cmd = "volatileother",
+	volatileother_name = "Летучая зараза на других",
+	volatileother_desc = "Предупреждает когда Летучая зараза на других",
+
+	trigger1 = "([^%s]+) ([^%s]+) (.*)Летучая зараза%.$",
+	trigger2 = "Пагубное дыхание",
+
+	warn1 = "Вы под воздействием Летучая зараза!",
+	warn2 = " под воздействием Летучая зараза!",
+	warn3 = "5 сек. до Пагубного дыхания!",
+	warn4 = "Пагубное дыхание - 30 сек. до следующего!",
+
+	isyou = "Вы",
+	isare = "потерпели",
+
+	bar1text = "Пагубное дыхание",
+	
+} end )
+
 L:RegisterTranslations("frFR", function() return {
 	noxious_name = "Alerte Souffle naus\195\169abond",
 	noxious_desc = "Pr\195\169viens quand Emeriss fait son Souffle naus\195\169abond.",

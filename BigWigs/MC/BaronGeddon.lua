@@ -54,6 +54,51 @@ L:RegisterTranslations("enUS", function() return {
 	icon_desc = "Put a Raid Icon on the person who's the bomb. (Requires promoted or higher)",
 } end)
 
+L:RegisterTranslations("ruRU", function() return {
+	bomb_trigger = "([^%s]+) ([^%s]+) (.*)Живая бомба%.$",
+	inferno_trigger = "Барон Геддон находится под воздействием эффекта \"Преисподняя\".",
+	service_trigger = "%s исполняет последнюю услугу для Рагнароса.",
+
+	you = "Вы",
+	are = "находитесь",
+
+	bomb_message_you = "На вас \"Живая бомба\"!",
+	bomb_message_other = "На (%s) Живая бомба!",
+
+	bombtimer_bar = "%s - Живая бомба",
+	inferno_bar = "Преисподняя",
+	service_bar = "Последняя услуга",
+
+	service_message = "Последняя услуга, Геддон взорветься через 5 сек!",
+	inferno_message = "Преисподняя 10 сек!",
+
+	cmd = "Baron",
+
+	service_cmd = "service",
+	service_name = "Последняя услуга",
+	service_desc = "Показывает таймер для последней услуги Геддона.",
+
+	inferno_cmd = "inferno",
+	inferno_name = "Преисподняя",
+	inferno_desc = "Показывает таймер преисподней",
+
+	bombtimer_cmd = "bombtimer",
+	bombtimer_name = "Таймер Живой бомбы",
+	bombtimer_desc = "Показывает 10-ти секундный таймер, когда спадет бомба с игрока.",
+
+	youbomb_cmd = "youbomb",
+	youbomb_name = "Живая бомба на вас",
+	youbomb_desc = "Предупреждает когда живая бомба на вас.",
+
+	elsebomb_cmd = "elsebomb",
+	elsebomb_name = "Живая бомба на другом",
+	elsebomb_desc = "Предупреждает когда живая бомба на ком-то другом.",
+
+	icon_cmd = "icon",
+	icon_name = "Рейдовая иконка на бомбе",
+	icon_desc = "Помечать рейдовой иконкой игрока, являющегося бомбой (необходимо быть лидером рейда или его помощником.).",
+} end)
+
 L:RegisterTranslations("zhCN", function() return {
 	bomb_trigger = "^(.+)受(.+)了活化炸弹",
 	inferno_trigger = "迦顿男爵获得了地狱火的效果。",
@@ -260,7 +305,7 @@ function BigWigsBaronGeddon:OnEnable()
 	self:RegisterEvent("CHAT_MSG_SPELL_PERIODIC_FRIENDLYPLAYER_DAMAGE", "Event")
 	self:RegisterEvent("CHAT_MSG_SPELL_PERIODIC_PARTY_DAMAGE", "Event")
 	self:RegisterEvent("CHAT_MSG_SPELL_PERIODIC_SELF_DAMAGE", "Event")
-	self:RegisterEvent("CHAT_MSG_SPELL_PERIODIC_CREATURE_BUFFS")
+	self:RegisterEvent("CHAT_MSG_SPELL_PERIODIC_CREATURE_DAMAGE")
 	self:RegisterEvent("CHAT_MSG_MONSTER_EMOTE")
 	self:RegisterEvent("CHAT_MSG_COMBAT_HOSTILE_DEATH", "GenericBossDeath")
 
@@ -283,7 +328,7 @@ function BigWigsBaronGeddon:Event(msg)
 	end
 end
 
-function BigWigsBaronGeddon:CHAT_MSG_SPELL_PERIODIC_CREATURE_BUFFS(msg)
+function BigWigsBaronGeddon:CHAT_MSG_SPELL_PERIODIC_CREATURE_DAMAGE(msg)
 	if msg == L["inferno_trigger"] then
 		self:TriggerEvent("BigWigs_SendSync", "GeddonInferno")
 	end

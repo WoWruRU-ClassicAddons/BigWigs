@@ -50,6 +50,46 @@ L:RegisterTranslations("enUS", function() return {
 	shadowbar_desc = "Shows a timer bar when someone gets Shadow of Ebonroc",
 } end)
 
+L:RegisterTranslations("ruRU", function() return {
+	wingbuffet_trigger = "Черноскал начинает использовать \"Рассечение крылом\".",
+	shadowflame_trigger = "Черноскал начинает использовать \"Теневое пламя\".",
+	shadowcurse_trigger = "([^%s]+) ([^%s]+) (.*)Тень Черноскала%.$",
+
+	you = "Вы",
+	are = "находитесь",
+
+	wingbuffet_message = "Рассечение крылом! 30 секунд до след.!",
+	wingbuffet_warning = "3 секунды до рассечения крылом!",
+	shadowflame_warning = "ТЕНЕВОЕ ПЛАМЯ!",
+	shadowflame_message_you = "Тень Черноскалa НА ВАС!!",
+	shadowflame_message_other = " - Тень Черноскала!",
+
+	wingbuffet_bar = "Рассечение крылом",
+	shadowcurse_bar = "%s - Тень Черноскала!",
+
+	cmd = "Ebonroc",
+
+	wingbuffet_cmd = "wingbuffet",
+	wingbuffet_name = "Рассечение крылом",
+	wingbuffet_desc = "Предупреждает о Рассечение крылом",
+
+	shadowflame_cmd = "shadowflame",
+	shadowflame_name = "Теневое пламя",
+	shadowflame_desc = "Предупреждает о Теневом пламени.",
+
+	youcurse_cmd = "youcurse",
+	youcurse_name = "Тень Черноскалa на вас",
+	youcurse_desc = "Предупреждает когда Тень Черноскалa на вас.",
+
+	elsecurse_cmd = "elsecurse",
+	elsecurse_name = "Тень Черноскалa на других",
+	elsecurse_desc = "Warn when others got Shadow of Ebonroc",
+
+	shadowbar_cmd = "cursebar",
+	shadowbar_name = "Таймер Тени Черноскала",
+	shadowbar_desc = "Отображает таймер когда на ком-то Тень Черноскала.",
+} end)
+
 L:RegisterTranslations("zhCN", function() return {
 	wingbuffet_trigger = "埃博诺克开始施放龙翼打击。",
 	shadowflame_trigger = "埃博诺克开始施放暗影烈焰。",

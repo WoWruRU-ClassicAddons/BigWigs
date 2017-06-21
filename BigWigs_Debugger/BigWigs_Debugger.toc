@@ -1,6 +1,7 @@
 ## Interface: 11200
 ## Title: Big Wigs Debugger |cff7fff7f -Ace2-|r
 ## Notes: Debugging options and assistance for Big Wigs.
+## Notes-ruRU: Параметры отладки и помощник по Big Wigs.
 ## Author: Rabbit
 ## Version: 1.0
 ## X-Website: http://www.wowace.com/index.php/BigWigs
@@ -11,4 +12,3 @@
 ## SavedVariables: BigWigsDebuggerDB
 
 Debugger.lua
-

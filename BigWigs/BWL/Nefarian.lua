@@ -68,6 +68,63 @@ L:RegisterTranslations("enUS", function() return {
 	otherwarn_desc = "Landing and Zerg warnings",
 } end)
 
+L:RegisterTranslations("ruRU", function() return {
+	landing_soon_trigger = "Браво, слуги мои! Смертные утрачивают мужество! Поглядим же, как они справятся с истинным владыкой Черной горы!!!",
+	landing_trigger = "Горите, мерзавцы, ГОРИТЕ!",
+	zerg_trigger = "Не может быть! Восстаньте, мои прислужники! Послужите господину еще раз!",
+	fear_trigger = "Нефариан начинает использовать \"Раскатистый рев\".",
+	shadowflame_trigger = "Нефариан начинает использовать \"Теневое пламя\".",
+
+	triggershamans	= "Шаманы, покажите, на что способны ваши тотемы!",
+	triggerdruid	= "Друиды и их дурацкие превращения… Ну что ж, поглядим!",
+	triggerwarlock	= "Чернокнижники, ну не беритесь вы за волшебство, которого сами не понимаете! Видите, что получилось?",
+	triggerpriest	= "Жрецы! Если вы собираетесь продолжать так лечить, то давайте хоть немного разнообразим процесс!",
+	triggerhunter	= "Охотники со своими жалкими пугачами!",
+	triggerwarrior	= "Воины! Я знаю, вы можете бить сильнее! Ну-ка, покажите!",
+	triggerrogue	= "Разбойники здесь? Хватит прятаться, покажитесь!",
+	triggerpaladin	= "Паладины… Я слышал, у вас несколько жизней. Докажите.",
+	triggermage		= "И маги тоже? Осторожнее надо быть, когда играешь с магией…",
+
+	landing_soon_warning = "Нефариан приземлится через 10 секунд!",
+	landing_warning = "Нефариан ПРИЗЕМЛЯЕТСЯ!",
+	zerg_warning = "НАЧИНАЕТСЯ ЗЕРГ!",
+	fear_warning = "СТРАХ ЧЕРЕЗ 2 СЕКУНДЫ!",
+	fear_soon_warning = "ВОЗМОЖНО СТРАХ ЧЕРЕЗ ~5 СЕКУНД",
+	shadowflame_warning = "Появляется теневое пламя!!",
+	classcall_warning = "Начинается классовый вызов!",
+
+	warnshaman	= "Шаманы - ставьте тотемы!",
+	warndruid	= "Друиды - пробудите в себе зверя!",
+	warnwarlock	= "Чернокнижники - вызывайте инферналов!",
+	warnpriest	= "Жрецы - исцеляйте повреждения!",
+	warnhunter	= "Охотники - доставайте свои луки!",
+	warnwarrior	= "Войны - становитесь в атакующие стойки!",
+	warnrogue	= "Разбойники - точите свои клинки!",
+	warnpaladin	= "Паладины - улучшайте защиту!",
+	warnmage	= "Маги - используйте превращение!",
+
+	classcall_bar = "Классовый вызов",
+	fear_bar = "Возможный страх",
+
+	cmd = "Nefarian",
+
+	shadowflame_cmd = "shadowflame",
+	shadowflame_name = "Теневое пламя",
+	shadowflame_desc = "Предупреждает о теневом пламени.",
+
+	fear_cmd = "fear",
+	fear_name = "Массовый страх",
+	fear_desc = "Предупреждает о касте массового страха Нефарианом.",
+
+	classcall_cmd = "classcall",
+	classcall_name = "Классовый вызов",
+	classcall_desc = "Предупреждает о классовом вызове.",
+
+	otherwarn_cmd = "otherwarn",
+	otherwarn_name = "Приземление и зерг",
+	otherwarn_desc = "Предупреждает об опасности приземления и зерга.",
+} end)
+
 L:RegisterTranslations("zhCN", function() return {
 	landing_soon_trigger = "干得好，我的手下。",
 	landing_trigger = "燃烧吧！你这个",

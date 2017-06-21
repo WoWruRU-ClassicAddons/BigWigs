@@ -1,4 +1,4 @@
-------------------------------
+﻿------------------------------
 --      Are you local?      --
 ------------------------------
 
@@ -30,6 +30,20 @@ L:RegisterTranslations("enUS", function() return {
 	["Phase 1 Too Close"] = true,
 	["Phase 2 Stomach"] = true,
 	["Nobody"] = true,
+} end )
+
+L:RegisterTranslations("ruRU", function() return {
+
+	cmd = "cthunassist",
+
+	sound_cmd = "sound",
+	sound_name = "Звук",
+	sound_desc = "Проигровать звук во время близости.",
+
+	["Big Wigs CThun Assist"] = "Big Wigs К'Тун помощник",
+	["Phase 1 Too Close"] = "Фаза 1 близко",
+	["Phase 2 Stomach"] = "Фаза 2 желудок",
+	["Nobody"] = "Никто",
 } end )
 
 ----------------------------------

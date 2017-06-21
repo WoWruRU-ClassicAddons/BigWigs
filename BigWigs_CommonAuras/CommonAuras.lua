@@ -49,6 +49,28 @@ L:RegisterTranslations("enUS", function() return {
 	["commonauras"] = true,
 } end )
 
+L:RegisterTranslations("ruRU", function() return {
+	fw_cast = "%s защитил от страха (%s).",
+	fw_bar = "%s: Восстановление антистраха",
+
+	used_cast = "%s использовал %s.",
+	used_bar = "%s: %s",
+
+	portal_cast = "%s открыл портал в %s!",
+	portal_regexp = ".*: (.*)",
+	-- portal_bar is the spellname
+
+	["Toggle %s display."] = "Переключить отображение %s.",
+	["Portal"] = "Портал",
+	["broadcast"] = "broadcast",
+	["Broadcast"] = "Вещание",
+	["Toggle broadcasting the messages to the raidwarning channel."] = "Посылать сообщения в канал предупреждений рейда",
+
+	["Gives timer bars and raid messages about common buffs and debuffs."] = "Показывать таймеры и рейдовые сообщения об основных основных положительных и отрицательных эффектах.",
+	["Common Auras"] = "Основные ауры",
+	["commonauras"] = "commonauras",
+} end )
+
 L:RegisterTranslations("koKR", function() return {
 	fw_cast = "%s님이 %s에게 공포의 수호물을 시전합니다.", --"%s|1이;가; %s에게 공포의 수호물을 시전합니다.",
 	fw_bar = "%s: FW 재사용 대기시간",

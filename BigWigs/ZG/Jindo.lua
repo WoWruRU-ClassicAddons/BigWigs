@@ -46,6 +46,43 @@ L:RegisterTranslations("enUS", function() return {
 	are = "are",
 } end )
 
+L:RegisterTranslations("ruRU", function() return {
+	cmd = "Jindo",
+
+	brainwash_cmd = "brainwash",
+	brainwash_name = "Зомбирующий тотем",
+	brainwash_desc = "Предупреждает о зомбирующем тотеме",
+
+	healing_cmd = "healing",
+	healing_name = "Исцеляющий идол",
+	healing_desc = "Предупреждает о исцеляющем идоле",
+
+	youcurse_cmd = "youcurse",
+	youcurse_name = "Проклятье на вас",
+	youcurse_desc = "Предупреждает когда прокльятье на вас",
+
+	elsecurse_cmd = "elsecurse",
+	elsecurse_name = "Проклятье на другом",
+	elsecurse_desc = "Предупреждает когда проклятье на других",
+
+	icon_cmd = "icon",
+	icon_name = "Рейдовая иконка",
+	icon_desc = "Помечать рейдовой иконкой игрока, на котором проклятье (необходимо быть лидером рейда или его помощником.).",
+
+	triggerbrainwash = "Мастер проклятий Джин'до применяет заклинание \"Вызов зомбирующего тотема\".",
+	triggerhealing = "Мастер проклятий Джин'до применяет заклинание \"Могущественный исцеляющий идол\".",
+	triggercurse = "([^%s]+) ([^%s]+) (.*)Иллюзии Джин'до%.$",
+
+	warnbrainwash = "Зомбирующий тотем!",
+	warnhealing = "Исцеляющий идол!",
+
+	cursewarn_self = "На вас проклятье!",
+	cursewarn_other = "%s - проклятье!",
+
+	you = "Вы",
+	are = "потерпели",
+} end )
+
 L:RegisterTranslations("deDE", function() return {
 	brainwash_name = "Gehirnw\195\164schetotem",
 	brainwash_desc = "Warnung, wenn Jin'do Gehirnw\195\164schetotem beschw\195\182rt.",

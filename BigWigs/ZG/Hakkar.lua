@@ -50,6 +50,47 @@ L:RegisterTranslations("enUS", function() return {
 	icon_desc = "Place a skull icon on the mind controlled person (requires promoted or higher)",
 } end)
 
+L:RegisterTranslations("ruRU", function() return {
+	-- Chat message triggers
+	engage_trigger = "ГОРДОСТЬ ПРЕДВЕЩАЕТ ГИБЕЛЬ ВАШЕГО МИРА. ПРИДИТЕ, СМЕРТНЫЕ! ВЗГЛЯНИТЕ НА ГНЕВ СВЕЖЕВАТЕЛЯ ДУШ!",
+	drain_trigger = "Кровавый насос",
+	mindcontrol_trigger = "([^%s]+) (.*)Насылание безумия%.$",
+
+	you = "Вы",
+	are = "потерпели",
+
+	flee = "Бегство не принесет вам ничего хорошего, смертные!",
+
+	-- Warnings and bar texts
+	start_message = "Бешенство - 90 сек. до похищения - 10 мин. до бешенства!",
+	drain_warning = "%d сек. до Похищения жизни!",
+	drain_message = "Похищение жизни - 90 сек. до следующего!",
+
+	mindcontrol_message = "%s под контролем разума!",
+	mindcontrol_bar = "MC: %s",
+
+	["Enrage"] = "Бешенство",
+	["Life Drain"] = "Похищение жизни",
+
+	cmd = "Hakkar",
+
+	drain_cmd = "drain",
+	drain_name = "Похищение",
+	drain_desc = "Предупреждает о похищении",
+
+	enrage_cmd = "enrage",
+	enrage_name = "Бешенство",
+	enrage_desc = "Предупреждает о бешенстве",
+
+	mc_cmd = "mc",
+	mc_name = "Контроль разума",
+	mc_desc = "Предупреждает когда кто-то под контролем разума.",
+
+	icon_cmd = "icon",
+	icon_name = "Рейдовая иконка",
+	icon_desc = "Помечать рейдовой иконкой игрока, который под воздействием контроля разума (необходимо быть лидером рейда или его помощником.).",
+} end)
+
 L:RegisterTranslations("deDE", function() return {
 	engage_trigger = "^EURE \195\156BERHEBLICHKEIT K\195\156NDET BEREITS VOM ENDE DIESER WELT!", -- ?
 	drain_trigger = "^Hakkar erleidet (.+) Naturschaden von (.+) %(durch Bluttrinker%).",
